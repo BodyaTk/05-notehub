@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { Note, NoteTag } from '../types/note';
 
 axios.defaults.baseURL = 'https://notehub-public.goit.study/api';
-axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_MY_API}`;
+axios.defaults.headers.common['Authorization'] = `Bearer ${import.meta.env.VITE_NOTEHUB_TOKEN}`;
 
 export interface GetNotes {
   notes: Note[];
